@@ -1,6 +1,6 @@
 import os
 
-from config.common import config
+from common import config
 
 if __name__ == '__main__':
 
