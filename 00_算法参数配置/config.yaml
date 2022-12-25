@@ -1,0 +1,54 @@
+# --------------------------------------- #
+# 01_图像数据标准
+# --------------------------------------- #
+# ------------------------------- #
+# 设置自制数据集保存根路径
+# ------------------------------- #
+mydataset_root: '../mydataset'
+dataset_like: 'coco'
+
+
+# --------------------------------------- #
+# 02_图像数据采集
+# --------------------------------------- #
+# ------------------------------- #
+# 设置百度爬虫参数
+# ------------------------------- #
+keyword: ['混凝土桥梁', '桥梁损伤']
+pic_need_num: 10
+pic_max_num: 10000
+
+# ------------------------------- #
+# 设置百度识图参数
+# ------------------------------- #
+base_url: 'https://gitee.com/hcq9186/pic-go/tree/master/images/'
+seed_img_dir: 'seed_img'
+seed_save_dir: 'similar_search_result'
+
+
+# --------------------------------------- #
+# 03_图像数据清洗
+# --------------------------------------- #
+# 设置图像数据高和宽
+# ------------------------------- #
+coco:
+  annotation_save_path: '/coco/Annotations'
+  pic_save_path: '/coco/train2017'
+  annotation_filetype: 'json'
+  width: 640
+  height: 480
+voc:
+  annotation_save_path: '/VOCdevkit/VOC2007/Annotations'
+  pic_save_path: '/VOCdevkit/VOC2007/JPEFImages'
+  annotation_filetype: 'xml'
+  width: 500
+  height: 400
+
+# 图片重命名开始数字
+start_number: 1
+
+# 设置备份路径
+backup_path: 'my_backup_dataset'
+
+
+

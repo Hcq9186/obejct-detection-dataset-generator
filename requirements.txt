@@ -1,0 +1,16 @@
+yaml
+
+bs4
+
+opencv-python
+selenium
+
+progressbar
+
+pillow
+pycocotools
+
+mmcv
+tqdm
+
+imgaug
